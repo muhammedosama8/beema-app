@@ -1,0 +1,28 @@
+.more-about{
+    margin-top: 5rem;
+}
+.about-title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about{
+    display: flex;
+    
+    img{
+        width: 30rem;
+    }
+    p{
+        font-size: 1.1rem;
+        width: 30%;
+        margin: auto;
+        line-height: 1.5;
+    }
+    @media (max-width: 426px) {
+        p{
+            width: 100%;
+        }
+        img{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.service-section{
+    margin-top: 2rem;
+    .title{
+        text-align: center;
+        font-weight: bold; 
+        margin-bottom: 1rem;  
+    }
+}
+
+
+.option{
+    margin-top: 2rem;
+    .service{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        .service-div{
+            text-align: center;
+            width: 50%;
+            margin: auto ;
+            .service-title{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            .service-description{
+                width: 80%;
+                font-size: 1.1rem;
+                margin: 10px auto;
+            }
+        }
+        .service-img{
+            width: 50%;
+            text-align: center;
+            img{
+                width: 15rem;
+            }
+        }
+        &:nth-of-type(even){
+            direction: rtl;
+        }
+
+        @media (max-width: 426px) {
+            &{
+                display: block;
+                .service-div {
+                    width: 100%;
+                }
+                .service-img {
+                    width:100%;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}

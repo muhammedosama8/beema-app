@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        .logo-image{
+            width: 3rem;
+            height: 3rem;
+        }
+        .logo-text{
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-left: 5px;
+            color: $text-color;
+        }
+    }
+    .nav-buttons{
+        button{
+            padding: 10px 15px;
+            font-weight: bold;
+            border: none;
+            color: $text-color;
+        }
+        .get-start{
+            background-color: $primary-color;
+            border-radius: 5px;
+        }
+        .login{
+            margin-left: 25px;
+            background: none;
+        }
+    }
+    @media (max-width: 426px) {
+        .logo-image{
+            width: 2rem;
+            height: 2rem;
+        }
+        .login{
+            margin-left:15px;
+            background: none;
+        }
+    }
+}
